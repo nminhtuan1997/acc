@@ -14,7 +14,7 @@ function Cart() {
     <Bre/>
     <div className="wrap-contentcart">
 
-    {listcart=='' ? <div className="container"><h1>Chưa có sản phẩm </h1></div>:  
+    {listcart=='' ? <div className="container"><h1 class="chuasp">Chưa có sản phẩm </h1></div>:  
         <div className="container">
         <div className="blocktotal">
       

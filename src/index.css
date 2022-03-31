@@ -6,6 +6,11 @@ body{
 .content .container{
   background:transparent !important;
 }
+.chuasp{
+  text-align: left;
+    color: green;
+    font-size: 17px;
+}
 .header-main{
 
   position: fixed;
@@ -576,6 +581,7 @@ border-radius: 0;
   text-align: right;
   color: green;
   font-weight: 700;
+  margin-top: 30px;
 }
 .td-xoa{
   text-align: right;
@@ -604,6 +610,9 @@ border-radius: 0;
 }
 
 @media(max-width:991px){
+  .header-main{
+    position: relative;
+  }
   .header-left{
     margin-left: 10px;
   }
@@ -726,6 +735,21 @@ background: #19a5d8;
   }
 }
 @media(max-width:767px){
+  .singlecontent .singlecontentleft,
+.singlecontent .singlecontentright{
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+  .title-description h3{
+    font-size: 16px;
+  }
+  .wrap-noidung1 .wrap-noidung .wrap-infobox .description,
+  .wrap-noidung1 .textchung>p{
+    font-size: 14px;
+  }
+  .singlecontentright .desc{
+    font-size: 13px;
+  }
   .singlecontentright .btn-cart{
     justify-content: center;
   }
@@ -767,10 +791,13 @@ background: #19a5d8;
   }
 }
 @media (max-width: 575px){
-  
+  .modal-overlay.show{
+    font-size: 14px;
+    padding:10px;
+  }
   .singlecontent .singlecontentleft, .singlecontent .singlecontentright{
-    flex: 0 0 70%;
-    max-width: 70%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   table thead{
      display: none;
