@@ -72,7 +72,7 @@ const AppProvider = ({children})=>{
         return () => clearTimeout(timeout);
       },[state.showalert]);
      
-      useEffect(()=>{
+      /*useEffect(()=>{
         
           dispatch({ type:'LIST-CART-AMOUNT'})
         
@@ -81,7 +81,7 @@ const AppProvider = ({children})=>{
           localStorage.setItem('setlist',JSON.stringify(state.listcart))
           localStorage.setItem('amountitem',JSON.stringify(state.amountcart))
           
-      });
+      });*/
      
     const all={
             ...state,

@@ -3,14 +3,14 @@
 
 const reducer=(state,action)=>{
 
-    if(action.type==="LIST-CART-AMOUNT"){
+    /*if(action.type==="LIST-CART-AMOUNT"){
         const data= localStorage.getItem('setlist');
         const data1= localStorage.getItem('amountitem');
         if(data && data1){
             return {...state,listcart:JSON.parse(data),amountcart:JSON.parse(data1)}
         }
         
-    }
+    }*/
  
 
     
