@@ -21,6 +21,8 @@ function Reg({getinfo1}) {
    
   },[infoac]);
   
+  
+  
     
   
     const handleSubmit1=(e)=>{
@@ -28,7 +30,10 @@ function Reg({getinfo1}) {
       if(inforeg.name!=='' && inforeg.pass!==''){
         getinfo1(inforeg);
         setinfoac(true);
-        
+        setinforeg({
+          name:'',
+           pass:''
+        })
       }
       else{
         alert('Username và Password không được để trống');
@@ -49,8 +54,8 @@ function Reg({getinfo1}) {
    <div className="wrap-tieude"><h2>Register</h2>
    </div>
    <input type="text" name="Name" placeholder="Name..." ></input>
-   <input type="text" name="username" placeholder="User..."  onChange={(e)=>setinforeg({...inforeg,name:e.target.value})}></input>
-   <input type="password" name="password" placeholder="Password..."  onChange={(e)=>setinforeg({...inforeg,pass:e.target.value})}></input>
+   <input type="text" name="username" placeholder="User..." value={inforeg.name} onChange={(e)=>setinforeg({...inforeg,name:e.target.value})}></input>
+   <input type="password" name="password" placeholder="Password..." value={inforeg.pass}  onChange={(e)=>setinforeg({...inforeg,pass:e.target.value})}></input>
     <button>Register</button>
    </form>
 
