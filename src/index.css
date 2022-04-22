@@ -6,6 +6,23 @@ body{
 .content .container{
   background:transparent !important;
 }
+.img-banner img{
+  width: 100%;
+}
+.img-banner .lg2,
+.img-banner .lg1{
+  position: relative;
+}
+.img-banner .lg2 p,
+.img-banner .lg1 p{
+  content:"";
+  position:absolute;
+  top: 50%;
+  background: red !important;
+  z-index: 9;
+  left:50%;
+  transform:translate(-50%,-50%)
+}
 .chuasp{
   text-align: left;
     color: green;

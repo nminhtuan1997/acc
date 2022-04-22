@@ -74,7 +74,7 @@ const AppProvider = ({children})=>{
      
       /*useEffect(()=>{
         
-          dispatch({ type:'LIST-CART-AMOUNT'})
+          dispatch({ type:'LIST-CART-AMOUNT'})s
         
       },[]);
       useEffect(()=>{
