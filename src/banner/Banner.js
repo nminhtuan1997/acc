@@ -19,11 +19,11 @@ function Banner() {
         <Slider {...settings}>
    
     <div className="img-banner">
-      <div className="lg1"><img className="logo" src={s2} alt="s2" /><p>asdnaskjdnas</p></div>
+      <div className="lg1"><img className="logo" src={s2} alt="s2" /></div>
       
     </div>
     <div className="img-banner">
-      <div className="lg2"><img className="logo" src={s4} alt="s4" /> <p>tdfdfd</p></div>
+      <div className="lg2"><img className="logo" src={s4} alt="s4" /> </div>
      
     </div>
     
